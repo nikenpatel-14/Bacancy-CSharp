@@ -1,34 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Assignment\\",
+  "WorkspaceRootPath": "D:\\Bacancy-C#\\DAY1\\Assignment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\demorunner\\demorunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demorunner\\demorunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\demo\\valuevsreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\valuevsreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\demorunner\\demorunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demorunner\\demorunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\assignment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\demo\\basicconsoleapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\basicconsoleapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\demo\\basicconsoleapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\basicconsoleapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\demo\\constreadonly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\constreadonly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\demo\\constreadonly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\constreadonly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\demo\\nullabletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\nullabletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\demo\\nullabletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\nullabletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|c:\\users\\asus\\source\\repos\\assignment\\assignment\\assignment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BB3505F6-17C7-4B97-B55F-1F20F3B5053B}|Assignment\\Assignment.csproj|solutionrelative:assignment\\assignment.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|d:\\bacancy-c#\\day1\\assignment\\assignment\\demo\\valuevsreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{614AF5D9-703D-8F03-CE27-C94E05E9C1E3}|Assignment\\Assignment.csproj|solutionrelative:assignment\\demo\\valuevsreference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,15 +38,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BasicConsoleApp.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\BasicConsoleApp.cs",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\BasicConsoleApp.cs",
               "RelativeDocumentMoniker": "Assignment\\Demo\\BasicConsoleApp.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\BasicConsoleApp.cs",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\BasicConsoleApp.cs",
               "RelativeToolTip": "Assignment\\Demo\\BasicConsoleApp.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -55,13 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DemoRunner.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\DemoRunner\\DemoRunner.cs",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\DemoRunner\\DemoRunner.cs",
               "RelativeDocumentMoniker": "Assignment\\DemoRunner\\DemoRunner.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\DemoRunner\\DemoRunner.cs",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\DemoRunner\\DemoRunner.cs",
               "RelativeToolTip": "Assignment\\DemoRunner\\DemoRunner.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwCAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T06:34:39.018Z",
               "EditorCaption": ""
@@ -70,48 +70,45 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ConstReadonly.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\ConstReadonly.cs",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\ConstReadonly.cs",
               "RelativeDocumentMoniker": "Assignment\\Demo\\ConstReadonly.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\ConstReadonly.cs",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\ConstReadonly.cs",
               "RelativeToolTip": "Assignment\\Demo\\ConstReadonly.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T05:23:59.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T05:23:59.435Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "NullableTypes.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\NullableTypes.cs",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\NullableTypes.cs",
               "RelativeDocumentMoniker": "Assignment\\Demo\\NullableTypes.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\NullableTypes.cs",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\NullableTypes.cs",
               "RelativeToolTip": "Assignment\\Demo\\NullableTypes.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T04:30:28.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ValueVsReference.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\ValueVsReference.cs",
-              "RelativeDocumentMoniker": "Assignment\\Demo\\ValueVsReference.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Demo\\ValueVsReference.cs",
-              "RelativeToolTip": "Assignment\\Demo\\ValueVsReference.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwBcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T04:27:54.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T04:30:28.462Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Assignment",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Assignment.csproj",
+              "Title": "ValueVsReference.cs",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\ValueVsReference.cs",
+              "RelativeDocumentMoniker": "Assignment\\Demo\\ValueVsReference.cs",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Demo\\ValueVsReference.cs",
+              "RelativeToolTip": "Assignment\\Demo\\ValueVsReference.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-16T04:27:54.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assignment.csproj",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Assignment.csproj",
               "RelativeDocumentMoniker": "Assignment\\Assignment.csproj",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Assignment.csproj",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Assignment.csproj",
               "RelativeToolTip": "Assignment\\Assignment.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -119,21 +116,25 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Program.cs",
+              "DocumentMoniker": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Program.cs",
               "RelativeDocumentMoniker": "Assignment\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Assignment\\Assignment\\Program.cs",
+              "ToolTip": "D:\\Bacancy-C#\\DAY1\\Assignment\\Assignment\\Program.cs",
               "RelativeToolTip": "Assignment\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T04:09:08.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
