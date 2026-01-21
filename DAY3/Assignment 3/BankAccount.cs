@@ -53,6 +53,7 @@ class NotSufficientBalanceException : Exception
 {
     public NotSufficientBalanceException(string message) : base(message)
     { 
+
     }
 
 }
