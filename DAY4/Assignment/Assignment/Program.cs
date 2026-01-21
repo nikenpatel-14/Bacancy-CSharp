@@ -15,13 +15,13 @@ class Program
 
         //same class name in diff namesapce (LambdaExp) accesing controller namespace class
 
-        LambdaExp lambdaExp = new LambdaExp();
-        lambdaExp.runAssignment2();
+        //LambdaExp lambdaExp = new LambdaExp();
+        //lambdaExp.runAssignment2();
 
 
         //same class name in diff namesapce (GenericSwapRepository) accesing controller namespace class
-        //GenericSwapRepository genericSwapRepository = new GenericSwapRepository();
-        //genericSwapRepository.runAssignment3();
+        GenericSwapRepository genericSwapRepository = new GenericSwapRepository();
+        genericSwapRepository.runAssignment3();
 
 
 
