@@ -21,7 +21,7 @@ namespace Assignment
         public static int wordCount(this string s)
         {
 
-            return s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            return s.Split(new char[] { ' ' }).Length;
         }
 
     }
