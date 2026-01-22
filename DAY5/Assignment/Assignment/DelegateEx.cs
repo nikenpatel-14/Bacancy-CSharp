@@ -8,24 +8,24 @@ namespace Assignment
     {
         public delegate void MyDel(string msg);
 
-        public static void displayMsg1(string msg)
+        public static void Hello1(string msg)
         {
             Console.WriteLine(msg);
         }
-        public static void displayMsg2(string msg) {
+        public static void Hello2(string msg) {
 
             Console.WriteLine(msg);
         }
 
         static void Main(string[] args)
         {
-            MyDel md = displayMsg1;
+            MyDel md = Hello1;
             md("this is delegate");
-            md += displayMsg2;
+            md += Hello2;
             md.Invoke("it called twice");
 
             Console.WriteLine("removing one method from delegate");
-            md -= displayMsg1;
+            md -= Hello1;
             md("it called only once");
         
         }
