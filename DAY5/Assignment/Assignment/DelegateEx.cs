@@ -10,11 +10,11 @@ namespace Assignment
 
         public static void Hello1(string msg)
         {
-            Console.WriteLine(msg);
+            Console.WriteLine("Hello 1 called : "+msg);
         }
         public static void Hello2(string msg) {
 
-            Console.WriteLine(msg);
+            Console.WriteLine("Hello 2 called : "+msg);
         }
 
         static void Main(string[] args)

@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Assignment.ExtensionMethod</StartupObject>
+    <StartupObject>Assignment.DelegateEx</StartupObject>
   </PropertyGroup>
 
 </Project>
