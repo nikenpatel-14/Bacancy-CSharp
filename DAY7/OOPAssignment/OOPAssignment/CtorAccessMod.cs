@@ -10,13 +10,14 @@ namespace OOPAssignment
         static void Main(string[] args)
         {
             
-            UserProfile user = new UserProfile("niken","mail","123");
+            UserProfile user = new UserProfile("niken","niken@example.com","123");
 
             //we can not access password fields because of private
             //Console.WriteLine($"password of {user.name} is {user.changePassword}");
 
+
             //to access private field we need to use method
-            Console.WriteLine($"passsword of username : {user.userName} is : " + user.getPassword());
+            Console.WriteLine($"passsword of username {user.userName} is " + user.getPassword());
         }
 
     }
