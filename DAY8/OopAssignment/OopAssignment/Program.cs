@@ -36,13 +36,15 @@ class Program
 
         //Assignment 4
         //ILogging logging = new User();
-        //IAuditing auditing = new User();
+       // User auditing = new User();
+        //((ILogging)auditing).check();
         //logging.check();
         //auditing.check();
 
 
+
         //Assignment 5
-        UserLogin user= new UserLogin();
+        UserLogin user = new UserLogin();
         user.login();
         AdminAccess admin = new AdminAccess();
         admin.login();
