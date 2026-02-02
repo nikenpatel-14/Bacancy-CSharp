@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>SOLIDandGCAssignment.SOLIDprinciple.Program</StartupObject>
+    <StartupObject>SOLIDandGCAssignment.UsingDispose</StartupObject>
   </PropertyGroup>
 
 </Project>
