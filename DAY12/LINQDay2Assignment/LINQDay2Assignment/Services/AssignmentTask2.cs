@@ -26,6 +26,19 @@ namespace LINQDay2Assignment.Services
                 Console.WriteLine($"EMPLOYEE NAME : {emp.EmpName}  , DEPARTMENT NAME : {emp.DepartmentName}");
                 
             }
+
+
+            //Linq Feature : Groupjoin, selectmany
+            //select many : it used to flatten the list of employees and access empname by parant child pairing (x,d)
+            //Groupjoin : it gives heararchial result int his case Department -> employees
+
+            Console.WriteLine("Perform group join");
+            var EmpGroup = departments.GroupJoin(employeeJoins, d => d.Id, e => e.DepID, (d, e) => new { Department = d.DepartmentName, Employees = e })
+                          .SelectMany(x=> x.Employees, (x, d) => new {Department = x.Department , Employees = d.EmpName , Empsalary = d.EmpSalary});
+            foreach(var emp in EmpGroup)
+            {
+                Console.WriteLine($"DEPARTMENT NAME : {emp.Department} ,EMPLOYEE NAME: {emp.Employees} , EMPLOYEE SALARY : {emp.Empsalary}");
+            }
         }
     }
 }
