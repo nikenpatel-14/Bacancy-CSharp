@@ -57,6 +57,12 @@ class Program
         // RunTask10(employees);
         #endregion
 
+
+        //extra work to check execution flow
+        List<int> numbers = new List<int> { 1, 2, 6, 7 };
+        extraTask(numbers);
+
+
     }
 
     #region[Task 1]
@@ -238,5 +244,16 @@ class Program
     // method syntax is more expressive type it increase readability and maintainibility
     #endregion
 
-
+    static void extraTask(List<int> numbers) 
+    {
+        var num = numbers.Where(x => x > 4);
+        numbers.Add(3);
+        numbers.Add(4);//this execute but does not added beacuse it does not satisfy the condition
+        numbers.Add(5);//it added in the list
+        foreach (var number in num)
+        {
+            Console.WriteLine(number);
+        }
+        //conclusion : list can be appended but the value need to satisfy the query condition
+    }
 }
