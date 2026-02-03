@@ -1,5 +1,6 @@
 ﻿
 using LINQ_DAY1Assignment;
+using System.Diagnostics.CodeAnalysis;
 
 class Program
 {
@@ -68,6 +69,10 @@ class Program
             Console.WriteLine($"Employee ID = {emp.EmployeeId}  , Employee name = {emp.Name}  , Employee Salary = {emp.EmpSalary}");
         }
     }
+    //LINQ FEATURE USED : WHERE,TOLIST
+    //USING Where as an clause to apply condition it applies selection
+    //by using Tolist linq execute and also it convert the result in list
+
     #endregion
 
     #region[Task 2]
@@ -80,6 +85,9 @@ class Program
             Console.WriteLine($"Employee Name = {emp.Name} , Employee Salary = {emp.EmpSalary}");
         }
     }
+    //Linq feature used : where,select
+    //using where to apply  condition selection deaprtment == it
+    //applying select to apply projectioj of name and salary by annonymus type
     #endregion
 
     #region[Task 3]
@@ -92,6 +100,10 @@ class Program
             Console.WriteLine($"Employee ID = {emp.EmployeeId},Employee Name = {emp.Name} , Employee Salary = {emp.EmpSalary}");
         }
     }
+    //linq feature used  select,where,orderby
+    //select is used to select id,name and salary
+    //where is used to apply condition of empsalary > 30000
+    //order by is used to make asscending order based on salary
     #endregion
 
     #region[Task 4]
@@ -108,7 +120,11 @@ class Program
         }
 
 
-    }
+    } 
+    //linq feature used : orderby,thenby,select
+    //orderby : to order based on department it makes it in asscending order
+    //thenby : it used to mske multilevel ordering where thenby make order based on name
+    //select : it select the feild id,name,department
     #endregion
 
     #region[Task 5]
