@@ -139,6 +139,11 @@ class Program
             Console.WriteLine($"Student Name = {s.StuName} , Student Marks = {s.Marks} , Student Result = {s.Result}");
         }
     }
+    //Linq feature : select,annonymus type,declaring resukt by ternary
+    //select : it select name ,marks
+    //annonymus type : it create a new object of type which has feild name,marks and result
+    //result using ternary,add new feild result by using ternary if marks >40 then pass else fail
+
     #endregion
 
     #region[Task 6]
@@ -152,6 +157,11 @@ class Program
         }
 
     }
+    //Linq feature used : SELECT,ANNONYMUS TYPE
+    //SELECT MAKE THE SELECTION OF FEILD
+    //BY USING ANNONYMUS TYPE WE CAN DECLARE THE NEW OBJECT WHOICH HAS TYPE NAME ,DEPARTMENT AND CITY
+    //ANNONYMUS TYPE USECASE ; there's no prior requirement to declare a object for result
+
     #endregion
 
     #region[Task 7]
