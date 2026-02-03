@@ -7,6 +7,8 @@ namespace LINQDay2Assignment.SampleData
 {
     internal class SampleData
     {
+
+        //returning list that has sample data of emplopyee
         public static List<Employee> SampleEmpData()
         {
             return new List<Employee> {
@@ -19,6 +21,9 @@ namespace LINQDay2Assignment.SampleData
             };
 
         }
+
+
+        //returning list that has sample data of Department
         public static List<Department> SampleDepData()
         {
             return new List<Department> {
@@ -28,6 +33,9 @@ namespace LINQDay2Assignment.SampleData
             };
 
          }
+
+
+        //returning list that has sample data of EmployeeJoin model
         public static List<EmployeeJoin> SampleEmployeeJoin()
         {
             return new List<EmployeeJoin>

@@ -4,14 +4,19 @@ class Program
 {
     static void Main (string[] args)
     {
-        //AssignmentTask1.Run();
+        //Assignment Task 1--------
+        AssignmentTask1.Run();
 
-        //AssignmentTask2.Run();
+        //Assignment Task 1--------
+        AssignmentTask2.Run();
 
-        //AssignmentTask3.Run();
+        //Assignment Task 1--------
+        AssignmentTask3.Run();
 
-        //AssignmentTask4.Run();
+        //Assignment Task 1--------
+        AssignmentTask4.Run();
 
+        //Assignment Task 1--------
         AssignmentTask5.Run();
     } 
 }
