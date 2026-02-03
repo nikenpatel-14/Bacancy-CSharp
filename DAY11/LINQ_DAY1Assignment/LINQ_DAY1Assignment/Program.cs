@@ -190,7 +190,8 @@ class Program
         }
     }
     //linq featuire used : selectmany  and selected cus name and product namew
-    
+    //by using (o,i) it goes on second lecvel its like o for parant level feilds and then i is for child level in this case deep llayer orderitem
+    //annonymus type is used to get a result object conataining customer name and productname
     #endregion
 
     #region[Task 9]
@@ -199,6 +200,10 @@ class Program
         return employees.Select(n => n.Name).ToArray();
 
     }
+    //linq feature used : ToArray and select
+    //select : for projection of name
+    //Toarray Force the execution of the query and also it converts the result in array
+    //methos return the string[] which stored in main method
 
     #endregion
 
@@ -226,6 +231,11 @@ class Program
             Console.WriteLine($"employee name : {emp.Name} , employee city : {emp.City}");
         }
     }
+    //querySynatax vs method syntax
+    //  By complier query syntax converted inn method syntax so it generate same IL code
+    // so that it has identical performance
+    // query syntax is more suitable for beginers who alreay worked on sql querry.
+    // method syntax is more expressive type it increase readability and maintainibility
     #endregion
 
 
