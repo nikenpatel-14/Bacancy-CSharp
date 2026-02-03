@@ -172,19 +172,25 @@ class Program
         {
             Console.WriteLine($"Product NaME : {items}");
         }
-    }
+    }// Linq feature used  selectmany and select
+    //select many : it used to flatten one to many relationship in this case order items
+    //select : it select productname for orderitems
+
+
     #endregion
 
     #region[Task 8]
     static void RunTask8(List<Order> orders)
     {
-        var CusNameProductName = orders.SelectMany(o => o.OrderItems,(o, i) => new { o.CustomerName, i.ProductName });
+        var CusNameProductName = orders.SelectMany(o => o.OrderItems, (o, i) => new { o.CustomerName, i.ProductName });
 
         foreach (var items in CusNameProductName)
         {
             Console.WriteLine($"Customer Name : {items.CustomerName} , Product Name : {items.ProductName} ");
         }
     }
+    //linq featuire used : selectmany  and selected cus name and product namew
+    
     #endregion
 
     #region[Task 9]
