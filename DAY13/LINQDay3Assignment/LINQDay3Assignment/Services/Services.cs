@@ -106,6 +106,13 @@ namespace LINQDay3Assignment.Services
 
 
             //Bad Way(N+1) problem
+            //N+1 Means if we fetch result directly without using join 
+            //and then fecth second result by iteerating n times
+            //so second querry will execute for n times
+            //in this case at first we get emp list and then inside for each loop we check dep id == emp dep id for every employee
+            //so if n employee then it execute n times
+            //this called n+1 problem to resolve it i use join in second way
+            //N times execution create overhead 
             Console.WriteLine("WITH N+1 PEOBLEM");
             var Emp = employeeJoins.ToList();//It execcute one time
             foreach(var emp in Emp)
@@ -113,6 +120,7 @@ namespace LINQDay3Assignment.Services
                 var dep = departments.First(x => x.Id == emp.DepID);//it execute N times
                 Console.WriteLine($"Employee name : {emp.EmpName} , Department Name : {dep.DepartmentName}");
             }
+
             Console.WriteLine("BY WRITING SINGLE QUERRY");
             var Empdata = employeeJoins.Join(departments, x => x.DepID, d => d.Id, (x, d) => new {x.EmpName ,d.DepartmentName});//it just execute once
             foreach(var emp in Empdata)
