@@ -50,7 +50,7 @@ class Program
         //N+1 query problem
         //N+1 problem means if we access the querry result by iterating loop like fetching order list and then geting product name by iteration
         //so querry will execute for first to fetch result and the Fot N times for N orderitems
-        //so avoid that we can directly use selectmany
+        //we can avoid that by using include and join
 
 
     }
