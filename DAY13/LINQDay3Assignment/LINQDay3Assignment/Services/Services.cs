@@ -1,6 +1,7 @@
 ﻿using LINQDay3Assignment.Models;
 using System;
 using System.Collections.Generic;
+using System.Runtime.Intrinsics.Arm;
 using System.Text;
 
 namespace LINQDay3Assignment.Services
@@ -96,6 +97,27 @@ namespace LINQDay3Assignment.Services
             foreach(var emp in Emp)
             {
                 Console.WriteLine($"DepartmentName : {emp.DepartmentName} , Count of Employee : {emp.Totalcount}");
+            }
+        }
+        public static void AssignmentTask6()
+        {
+            List<EmployeeJoin> employeeJoins = SampleData.SampleData.SampleEmpFORJoin();
+            List<Department> departments = SampleData.SampleData.SampleDepData();
+
+
+            //Bad Way(N+1) problem
+            Console.WriteLine("WITH N+1 PEOBLEM");
+            var Emp = employeeJoins.ToList();//It execcute one time
+            foreach(var emp in Emp)
+            {
+                var dep = departments.First(x => x.Id == emp.DepID);//it execute N times
+                Console.WriteLine($"Employee name : {emp.EmpName} , Department Name : {dep.DepartmentName}");
+            }
+            Console.WriteLine("BY WRITING SINGLE QUERRY");
+            var Empdata = employeeJoins.Join(departments, x => x.DepID, d => d.Id, (x, d) => new {x.EmpName ,d.DepartmentName});//it just execute once
+            foreach(var emp in Empdata)
+            {
+                Console.WriteLine($"Employee name : {emp.EmpName} , Department Name : {emp.DepartmentName}");
             }
         }
         public static void AssignmentTask7()

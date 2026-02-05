@@ -46,6 +46,29 @@ namespace LINQDay3Assignment.SampleData
                       }
             };
         }
+        public static List<EmployeeJoin> SampleEmpFORJoin()
+        {
+            return new List<EmployeeJoin>
+            {
+                    new EmployeeJoin{EmpName = "Om",EmployeeID = 1, EmpSalary = 50000 ,DepID = 1}
+                    ,new EmployeeJoin{EmpName = "Aayush",EmployeeID = 2, EmpSalary = 40000 ,DepID =2 }
+                    ,new EmployeeJoin{EmpName = "Vishw",EmployeeID = 3, EmpSalary = 60000 ,DepID = 3}
+                    ,new EmployeeJoin{EmpName = "Niken",EmployeeID = 4, EmpSalary = 30000 ,DepID =1 }
+
+            };
+
+        }
+        public static List<Department> SampleDepData()
+        {
+            return new List<Department> {
+                new Department{ Id = 1, DepartmentName = "IT" }
+                ,new Department{ Id = 2,DepartmentName = "MARKETING" }
+                ,new Department{ Id = 3,DepartmentName = "HR" }
+            };
+
+        }
+
+
         public static List<Product> SampleProductdata()
         {
             return new List<Product> {
