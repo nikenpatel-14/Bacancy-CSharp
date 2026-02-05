@@ -99,6 +99,37 @@ namespace LINQDay3Assignment.Services
                 Console.WriteLine($"DepartmentName : {emp.DepartmentName} , Count of Employee : {emp.Totalcount}");
             }
         }
+        public static void AssignmentTask5()
+        {
+            //IEnumrable vs IQueryable
+            //IEnumrable
+            //it works in memory
+            //linq provider converts linq result on collection to ienumrable
+            //IEnumrable load the complete colletion in memory
+            //it works on c# side so it understands method like cw
+
+            //IQuerable
+            //it work in database
+            //linq providers convert this in sql to query on db
+            //in memomry only result stored
+            //it works on SQL side
+            Console.WriteLine("IEnumrable result");
+            List<Employee> employees = SampleData.SampleData.SampleEmpData();
+            IEnumerable<Employee> resulIEnum = employees.Where(x => x.EmpSalary > 30000);
+            foreach(var emp in resulIEnum)
+            {
+                Console.WriteLine($"Employee Id : {emp.EmployeeID} , Employee Name : {emp.EmpName} , Employee Salary : {emp.EmpSalary} , Department name : {emp.Department}");
+
+            }
+
+            Console.WriteLine("Queryable Result");
+            IQueryable<Employee> resulIQuerry = employees.AsQueryable().Where(x => x.EmpSalary > 30000);
+            foreach (var emp in resulIQuerry)
+            {
+                Console.WriteLine($"Employee Id : {emp.EmployeeID} , Employee Name : {emp.EmpName} , Employee Salary : {emp.EmpSalary} , Department name : {emp.Department}");
+
+            }
+        }
         public static void AssignmentTask6()
         {
             List<EmployeeJoin> employeeJoins = SampleData.SampleData.SampleEmpFORJoin();

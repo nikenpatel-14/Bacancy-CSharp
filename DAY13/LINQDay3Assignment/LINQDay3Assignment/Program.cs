@@ -17,9 +17,11 @@ class Program
         //Task4-------
         //Services.AssignmentTask4();
 
+        //Task5-------
+        Services.AssignmentTask5();
 
         //Task6-------
-        Services.AssignmentTask6();
+        //Services.AssignmentTask6();
         //Task7-------
         //Services.AssignmentTask7();
 
