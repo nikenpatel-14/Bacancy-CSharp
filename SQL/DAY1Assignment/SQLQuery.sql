@@ -50,12 +50,12 @@ create table Employee(
  --QUERRY 2
  select distinct Department
  from Employee
- where Department Like 's%'
+ where Department Like 's%';
  
  --QUERRY 3
  select *
  from Employee
- where Department in ('HR','IT','FINANCE') AND Salary>50000
+ where Department in ('HR','IT','FINANCE') AND Salary>50000;
  
  --QUERRY 4
  --here at first we apply condition salary >75000
@@ -63,7 +63,7 @@ create table Employee(
  --so it select the employe who either have salary greater than 75000 or from sales department
  select *
  from Employee
- where Salary>75000 or Department = 'sales' 
+ where Salary>75000 or Department = 'sales'; 
  
  
  --QUERRY 5
@@ -77,7 +77,7 @@ create table Employee(
  from Employee
  order by DateOfJoining
  OFFSET 5 rows
- fetch next  5 rows only
+ fetch next  5 rows only;
 
 
  --QUERRY 7
@@ -85,7 +85,7 @@ create table Employee(
  from Employee
  where (Department = 'IT' and Salary > 60000)
         or
-       (Department ='HR' and DateOfJoining < '2020-01-01')
+       (Department ='HR' and DateOfJoining < '2020-01-01');
 
 
 
