@@ -4,6 +4,7 @@ using EFCoreDemo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCoreDemo.Migrations
 {
     [DbContext(typeof(EFCoreDbContext))]
-    partial class EFCoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260217093125_RelationAdded")]
+    partial class RelationAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,21 +24,6 @@ namespace EFCoreDemo.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("CourseStudent", b =>
-                {
-                    b.Property<int>("CoursesCourseId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("StudentsStudentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("CoursesCourseId", "StudentsStudentId");
-
-                    b.HasIndex("StudentsStudentId");
-
-                    b.ToTable("CourseStudent");
-                });
 
             modelBuilder.Entity("EFCoreDemo.Model.Batch", b =>
                 {
@@ -129,21 +117,6 @@ namespace EFCoreDemo.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Trainer");
-                });
-
-            modelBuilder.Entity("CourseStudent", b =>
-                {
-                    b.HasOne("EFCoreDemo.Model.Course", null)
-                        .WithMany()
-                        .HasForeignKey("CoursesCourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EFCoreDemo.Model.Student", null)
-                        .WithMany()
-                        .HasForeignKey("StudentsStudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("EFCoreDemo.Model.Batch", b =>
