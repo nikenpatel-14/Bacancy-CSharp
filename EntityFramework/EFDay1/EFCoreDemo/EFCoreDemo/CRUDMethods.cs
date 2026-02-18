@@ -116,7 +116,7 @@ namespace EFCoreDemo
                 Console.WriteLine($"Trainer Id = {obj.Id},Trainer Name = {obj.Name},Experience = {obj.ExperienceInYears}, Bacth Id = {obj.Id} ,BatchStartDate = {obj.StartDate} ");
             }
         }
-
+            
 
     }
 }
