@@ -111,6 +111,7 @@ namespace EFCoreDemo
         {
             var TrainersWithBatches = dbContext.Trainers.SelectMany(x => x.batches, (t, x) => new { t.Id, t.Name, t.ExperienceInYears, BatchId =x.Id, x.StartDate });
 
+
             foreach(var obj in TrainersWithBatches)
             {
                 Console.WriteLine($"Trainer Id = {obj.Id},Trainer Name = {obj.Name},Experience = {obj.ExperienceInYears}, Bacth Id = {obj.Id} ,BatchStartDate = {obj.StartDate} ");

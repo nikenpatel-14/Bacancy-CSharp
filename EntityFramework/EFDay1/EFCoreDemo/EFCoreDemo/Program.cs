@@ -50,6 +50,8 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
             case 8:
                 Crud.showTrainerWithBatches(dbContext);
                 break;
+            case 9:
+                break;
             default:
                 Console.WriteLine("Enter The Valid Input\n");
                 break;
