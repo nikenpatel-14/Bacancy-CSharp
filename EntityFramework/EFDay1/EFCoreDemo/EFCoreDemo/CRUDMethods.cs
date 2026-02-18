@@ -1,5 +1,7 @@
 ﻿using EFCoreDemo.Data;
+using EFCoreDemo.Migrations;
 using EFCoreDemo.Model;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -41,6 +43,7 @@ namespace EFCoreDemo
             Console.WriteLine("Enter Duration in Months");
             course.DurationInMonths = Convert.ToInt32(Console.ReadLine());
             dbContext.Courses.Add(course);
+
             dbContext.SaveChanges();
 
         }
@@ -54,6 +57,66 @@ namespace EFCoreDemo
             }
 
         }
+        public void EnrollStuInCourse(EFCoreDbContext dbContext)
+        {
+            Console.WriteLine("Enter Course Title");
+            string Cname = Console.ReadLine();
+            Console.WriteLine("Enter student Name");
+            string Sname = Console.ReadLine();
+
+
+            var course = dbContext.Courses.FirstOrDefault(x => x.Title == Cname);
+            var student = dbContext.Students.FirstOrDefault(x => x.Name == Sname);
+
+            if (course != null) {
+                student.Courses.Add(course);
+                dbContext.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("Course Does Not Exist");
+            }
+
+        }
+        public void createBatch(EFCoreDbContext dbContext)
+        {
+            Console.WriteLine("Enter the Batch start date In format(YYYY-MM--DD)");
+            Batch batch = new Batch();
+            batch.StartDate = DateOnly.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the Course Title");
+            string cname = Console.ReadLine();
+            Console.WriteLine("Enter the Trainer Name");
+            string tname = Console.ReadLine();
+
+            var cobj = dbContext.Courses.FirstOrDefault(x => x.Title == cname);
+
+            var tobj = dbContext.Trainers.FirstOrDefault(x => x.Name == tname);
+
+            batch.TrainerId = tobj.Id;
+            batch.CourseId = cobj.CourseId;
+
+            dbContext.Batchs.Add(batch);
+            dbContext.SaveChanges();
+
+        }
+        public void showCourseWithStudent(EFCoreDbContext dbContext)
+        {
+            var CoursesWithBatches = dbContext.Courses.SelectMany(x => x.Students, (c, x) => new {c.Title,c.CourseId,c.DurationInMonths,x.StudentId,x.Name});
+            foreach(var obj in CoursesWithBatches)
+            {
+                Console.WriteLine($"Course Id = {obj.CourseId},Course Title = {obj.Title} , DurationInMonths = {obj.DurationInMonths},Student Name = {obj.Name} ,Student Id = {obj.StudentId}");
+            }
+        }
+        public void showTrainerWithBatches(EFCoreDbContext dbContext)
+        {
+            var TrainersWithBatches = dbContext.Trainers.SelectMany(x => x.batches, (t, x) => new { t.Id, t.Name, t.ExperienceInYears, BatchId =x.Id, x.StartDate });
+
+            foreach(var obj in TrainersWithBatches)
+            {
+                Console.WriteLine($"Trainer Id = {obj.Id},Trainer Name = {obj.Name},Experience = {obj.ExperienceInYears}, Bacth Id = {obj.Id} ,BatchStartDate = {obj.StartDate} ");
+            }
+        }
+
 
     }
 }
