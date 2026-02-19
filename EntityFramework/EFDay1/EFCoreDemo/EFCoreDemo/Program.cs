@@ -1,7 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using EFCoreDemo;
+using EFCoreDemo.Controller;
 using EFCoreDemo.Data;
 using EFCoreDemo.Model;
+using Microsoft.EntityFrameworkCore;
 
 
 using (EFCoreDbContext dbContext = new EFCoreDbContext())
@@ -9,6 +11,7 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
 
     CRUDMethods Crud = new CRUDMethods();
 
+    Loading loading = new Loading();
     do
     {
         Console.WriteLine("******ConsoleMenu******");
@@ -20,7 +23,11 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
         Console.WriteLine(" 6) Create Batch");
         Console.WriteLine(" 7) Show Course with Students");
         Console.WriteLine(" 8) Show Trainer with Batches");
-        Console.WriteLine(" 9) EXIT");
+        Console.WriteLine(" 9)Course Crud Operations");
+        Console.WriteLine(" 10)Student Crud Operations");
+        Console.WriteLine(" 11)Trainer Crud Operations");
+
+        Console.WriteLine(" 12) EXIT");
         Console.WriteLine("\nENTER YOUR OPTION\n");
         int option = Convert.ToInt32(Console.ReadLine());
 
@@ -51,19 +58,45 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
                 Crud.showTrainerWithBatches(dbContext);
                 break;
             case 9:
+                CourseCRUD courseCRUD = new CourseCRUD();
+                courseCRUD.Run(dbContext);
+                break;
+            case 10:
+                StudentCRUD studentCRUD = new StudentCRUD();
+                studentCRUD.Run(dbContext);
+                break;
+            case 11:
+                TrainerCRUD trainerCRUD = new TrainerCRUD();
+                trainerCRUD.Run(dbContext);
+                break;
+            case 12:
+                break;
+            case 13:
+                loading.ExplicitLoadingExample(dbContext);
+                break;
+            case 14:
+                break;
+            case 15:
                 break;
             default:
                 Console.WriteLine("Enter The Valid Input\n");
                 break;
         }
-        if(option == 9)
+        if (option == 15)
         {
             break;
         }
     } while (true);
 
 
+    //var t = dbContext.Trainers.Include(x => x.batches).ThenInclude(x=>x.Course).ThenInclude(x=>x.Students).ToList();
+    //    foreach (var trainer in t)
+    //{
+    //    var batches = trainer.batches;
+    //    Console.WriteLine($"{trainer.Name}, {trainer.batches}");
+    //}
+    //lazy loading
+    //why navigation prop virtual
 
+    
 }
-
-

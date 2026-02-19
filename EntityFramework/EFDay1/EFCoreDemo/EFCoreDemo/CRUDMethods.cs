@@ -118,6 +118,14 @@ namespace EFCoreDemo
             }
         }
             
+        //public void ExtraTASK(EFCoreDbContext dbContext)
+        //{
+        //    var TRAINERS = dbContext.Trainers.ToList();
 
+        //    foreach(var t in TRAINERS)
+        //    {
+
+        //    }
+        //}
     }
 }
