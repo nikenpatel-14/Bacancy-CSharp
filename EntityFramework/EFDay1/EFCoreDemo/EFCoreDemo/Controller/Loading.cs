@@ -14,8 +14,8 @@ namespace EFCoreDemo.Controller
             Console.WriteLine("Enter Student ID");
             int sid = int.Parse(Console.ReadLine());
             var result = dbContext.Students.Include(x => x.Courses).ThenInclude(a => a.batches).FirstOrDefault(x=>x.StudentId == sid);
-            var BatchCount = result.Courses.Select(x => new { batchcount = x.batches.Count() });
-            Console.WriteLine($"student name ={result.Name} , courses count = {result.Courses.Count()} ,Batches Count ={BatchCount} ");
+        
+            Console.WriteLine($"student name ={result.Name} , courses count = {result.Courses.Count()}");
  
   
 
@@ -42,26 +42,35 @@ namespace EFCoreDemo.Controller
             countNplusOne++;
             foreach (var item in result)
             {
-                var batches = result.Select(x => x.Course);
+                var courses = item.Course;
                 countNplusOne++;
-                foreach (var c in batches)
-                {
-                    Console.WriteLine(c.Title);
-                }
-
+                Console.WriteLine(item.Id);
+                
             }
-
+            Console.WriteLine("total query executed without include " + countNplusOne);
             int countInclude = 0;
             var result2 = dbContext.Batchs.Include(x => x.Course);
             countInclude++;
-            foreach (var item in result)
+            foreach (var item in result2)
             {
-
-
-                
+                Console.WriteLine(item.Course.Title);
 
             }
 
+            Console.WriteLine("total query executed with include " + countInclude);
+
         }
+        //public void LazyLoading(EFCoreDbContext dbContext)
+        //{
+        //    var students = dbContext.Students.ToList();
+
+        //    foreach (var student in students)
+        //    {
+        //        foreach (var c in student.Courses)
+        //        {
+        //            Console.WriteLine(c.Title);
+        //        }
+        //    }
+        //}
     }
 }

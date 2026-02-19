@@ -14,7 +14,7 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
     Loading loading = new Loading();
     do
     {
-        Console.WriteLine("******ConsoleMenu******");
+        Console.WriteLine("\n******ConsoleMenu******");
         Console.WriteLine(" 1) Add Student");
         Console.WriteLine(" 2) Add Course");
         Console.WriteLine(" 3) Show All Students");
@@ -26,8 +26,10 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
         Console.WriteLine(" 9)Course Crud Operations");
         Console.WriteLine(" 10)Student Crud Operations");
         Console.WriteLine(" 11)Trainer Crud Operations");
-
-        Console.WriteLine(" 12) EXIT");
+        Console.WriteLine(" 12)Eager Loading example");
+        Console.WriteLine(" 13)Explicit loading example");
+        Console.WriteLine(" 14)N+1 VS USING INCLUDE");
+        Console.WriteLine(" 15) EXIT");
         Console.WriteLine("\nENTER YOUR OPTION\n");
         int option = Convert.ToInt32(Console.ReadLine());
 
@@ -70,11 +72,13 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
                 trainerCRUD.Run(dbContext);
                 break;
             case 12:
+                loading.EagerLoadingExample(dbContext);
                 break;
             case 13:
                 loading.ExplicitLoadingExample(dbContext);
                 break;
             case 14:
+                loading.NplusOneVsInclude(dbContext);
                 break;
             case 15:
                 break;
@@ -98,5 +102,5 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
     //lazy loading
     //why navigation prop virtual
 
-    
+
 }
