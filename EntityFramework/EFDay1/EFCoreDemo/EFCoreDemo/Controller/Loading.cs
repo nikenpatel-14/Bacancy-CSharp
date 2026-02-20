@@ -60,17 +60,30 @@ namespace EFCoreDemo.Controller
             Console.WriteLine("total query executed with include " + countInclude);
 
         }
-        //public void LazyLoading(EFCoreDbContext dbContext)
-        //{
-        //    var students = dbContext.Students.ToList();
+        public void LazyLoading(EFCoreDbContext dbContext)
+        {
+            var students = dbContext.Students.ToList();
 
-        //    foreach (var student in students)
-        //    {
-        //        foreach (var c in student.Courses)
-        //        {
-        //            Console.WriteLine(c.Title);
-        //        }
-        //    }
-        //}
+            foreach (var student in students)
+            {
+                foreach (var c in student.Courses)
+                {
+                    Console.WriteLine(c.Title);
+                }
+            }
+        }
+
+        public void DetachedDemo(EFCoreDbContext dbContext)
+        {
+            var result = dbContext.Students.Find(1);
+            Console.WriteLine("Name befor update" +result.Name);
+            Console.WriteLine("state "+dbContext.Entry(result).State);
+            dbContext.Entry(result).State = EntityState.Detached;
+            result.Name = "NikenPatel";
+            dbContext.SaveChanges();
+            Console.WriteLine("state "+dbContext.Entry(result).State);
+            var result2 = dbContext.Students.Find(1);
+            Console.WriteLine("Name after update"+result2.Name);
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EFCoreDemo.Model
 {
-    internal class Student
+    public class Student
     {
         [Key]
         public int StudentId { get; set; }
@@ -18,7 +18,7 @@ namespace EFCoreDemo.Model
 
         public DateTime CreatedDate { get; set; }
 
-        public List<Course> Courses { get; set; } = new List<Course>();
+        public virtual List<Course> Courses { get; set; } = new List<Course>();
 
     }
 }

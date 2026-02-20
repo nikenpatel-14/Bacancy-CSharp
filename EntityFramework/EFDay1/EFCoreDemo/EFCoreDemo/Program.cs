@@ -12,6 +12,7 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
     CRUDMethods Crud = new CRUDMethods();
 
     Loading loading = new Loading();
+  
     do
     {
         Console.WriteLine("\n******ConsoleMenu******");
@@ -29,7 +30,9 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
         Console.WriteLine(" 12)Eager Loading example");
         Console.WriteLine(" 13)Explicit loading example");
         Console.WriteLine(" 14)N+1 VS USING INCLUDE");
-        Console.WriteLine(" 15) EXIT");
+        Console.WriteLine(" 15)DETACHED DEMO");
+        Console.WriteLine(" 16)Lazy Loading example");
+        Console.WriteLine(" 17) EXIT");
         Console.WriteLine("\nENTER YOUR OPTION\n");
         int option = Convert.ToInt32(Console.ReadLine());
 
@@ -81,12 +84,18 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
                 loading.NplusOneVsInclude(dbContext);
                 break;
             case 15:
+                loading.DetachedDemo(dbContext);
+                break;
+            case 16:
+                loading.LazyLoading(dbContext);
+                break;
+            case 17:
                 break;
             default:
                 Console.WriteLine("Enter The Valid Input\n");
                 break;
         }
-        if (option == 15)
+        if (option == 17)
         {
             break;
         }

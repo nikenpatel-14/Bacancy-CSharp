@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EFCoreDemo.Model
 {
-    internal class Batch
+    public class Batch
     {
         public int Id { get; set; }
         public DateOnly StartDate { get; set; }

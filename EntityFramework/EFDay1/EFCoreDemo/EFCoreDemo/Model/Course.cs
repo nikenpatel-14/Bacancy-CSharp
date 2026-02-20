@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EFCoreDemo.Model
 {
-    internal class Course
+    public class Course
     {
         [Key]
         public int CourseId { get; set; }
@@ -17,9 +17,9 @@ namespace EFCoreDemo.Model
 
         public int DurationInMonths { get; set; }
 
-        public List<Batch> batches { get; set; } = new List<Batch>();
+        public virtual List<Batch> batches { get; set; } = new List<Batch>();
 
 
-        public List<Student> Students { get; set; } = new List<Student>();
+        public virtual List<Student> Students { get; set; } = new List<Student>();
     }
 }

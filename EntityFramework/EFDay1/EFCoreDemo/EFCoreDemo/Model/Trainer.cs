@@ -4,13 +4,13 @@ using System.Text;
 
 namespace EFCoreDemo.Model
 {
-    internal class Trainer
+    public class Trainer
     {
         public int Id { get; set; }
         public string Name { get; set; }
 
         public int ExperienceInYears { get; set; }
 
-        public List<Batch> batches { get; set; } = new List<Batch>();
+        public virtual List<Batch> batches { get; set; } = new List<Batch>();
     }
 }
