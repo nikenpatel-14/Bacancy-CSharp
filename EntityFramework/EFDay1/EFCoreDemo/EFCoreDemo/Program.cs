@@ -32,7 +32,8 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
         Console.WriteLine(" 14)N+1 VS USING INCLUDE");
         Console.WriteLine(" 15)DETACHED DEMO");
         Console.WriteLine(" 16)Lazy Loading example");
-        Console.WriteLine(" 17) EXIT");
+        Console.WriteLine(" 17)Attach ENtity after asnotracking");
+        Console.WriteLine(" 18) EXIT");
         Console.WriteLine("\nENTER YOUR OPTION\n");
         int option = Convert.ToInt32(Console.ReadLine());
 
@@ -90,12 +91,15 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
                 loading.LazyLoading(dbContext);
                 break;
             case 17:
+                loading.asNoTrackingAttach(dbContext);
+                break;
+            case 18:
                 break;
             default:
                 Console.WriteLine("Enter The Valid Input\n");
                 break;
         }
-        if (option == 17)
+        if (option == 18)
         {
             break;
         }

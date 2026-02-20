@@ -85,5 +85,18 @@ namespace EFCoreDemo.Controller
             var result2 = dbContext.Students.Find(1);
             Console.WriteLine("Name after update"+result2.Name);
         }
+        public void asNoTrackingAttach(EFCoreDbContext dbContext)
+        {
+            var student = dbContext.Students.AsNoTracking().FirstOrDefault();
+            Console.WriteLine("student name" + student.Name);
+            Console.WriteLine("Enter updated name");
+            student.Name = Console.ReadLine();
+
+            dbContext.Attach(student);
+            dbContext.SaveChanges();
+            var student2 = dbContext.Students.FirstOrDefault();
+            Console.WriteLine("student updated name" + student2.Name);
+
+        }
     }
 }
