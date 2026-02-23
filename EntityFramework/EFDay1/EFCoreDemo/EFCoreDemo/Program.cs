@@ -38,6 +38,7 @@ using (EFCoreDbContext dbContext = new EFCoreDbContext())
         int option = Convert.ToInt32(Console.ReadLine());
 
         switch (option)
+
         {
             case 1:
                 Crud.AddStudent(dbContext);

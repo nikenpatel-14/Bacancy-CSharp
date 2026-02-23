@@ -94,8 +94,16 @@ namespace EFCoreDemo.Controller
 
             dbContext.Attach(student);
             dbContext.SaveChanges();
+
+            dbContext.ChangeTracker.Clear();
+
+            EFCoreDbContext dbcontext2 = new EFCoreDbContext();
             var student2 = dbContext.Students.FirstOrDefault();
             Console.WriteLine("student updated name" + student2.Name);
+            Console.WriteLine("student updated name" + dbContext.Entry(student).State);
+
+            var student3 = dbContext.Students.FirstOrDefault();
+            Console.WriteLine("student updated name" + student3.Name);
 
         }
     }

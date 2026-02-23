@@ -119,7 +119,7 @@ namespace CorporateTrainingManagementSystem.ConsoleMenuServices
         {
             Console.WriteLine("Enter Training program Id");
             int tpid = int.Parse(Console.ReadLine());
-            var result = dbContext.TrainingPrograms.Include(x=>x.Trainer)
+            var result = dbContext.TrainingPrograms.AsNoTracking().Include(x=>x.Trainer)
                                                    .Include(x=>x.Junction)
                                                    .ThenInclude(x=>x.Employee)
                                                    .ThenInclude(x=>x.Department)
@@ -153,7 +153,7 @@ namespace CorporateTrainingManagementSystem.ConsoleMenuServices
         {
             Console.WriteLine("Enter Department Id");
             int did = int.Parse(Console.ReadLine());
-            var result = dbContext.Departments.Include(x => x.Employees)
+            var result = dbContext.Departments.AsNoTracking().Include(x => x.Employees)
                                               .ThenInclude(x => x.Junction)
                                               .FirstOrDefault(x => x.DepartmentId == did);
             if (result == null)
